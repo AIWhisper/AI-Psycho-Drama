@@ -20,25 +20,28 @@ A controlled testing environment for AI character interactions with comprehensiv
 
 ## Project Structure
 
-    ai-psycho-drama/
-    ├── src/
-    │   ├── models/          # Core data models
-    │   ├── core/            # System functionality
-    │   └── interface/       # User interface
-    ├── tests/               # Test implementations
-    ├── docs/               
-    └── data/               
+```
+ai-psycho-drama/
+├── src/
+│   ├── models/          # Core data models
+│   ├── core/            # System functionality
+│   └── interface/       # User interface
+├── tests/               # Test implementations
+├── docs/               
+└── data/               
+```
 
 ## Installation
 
 1. Clone repository
 2. Set PYTHONPATH:
-
-    export PYTHONPATH=$PYTHONPATH:$PWD
-
+```bash
+export PYTHONPATH=$PYTHONPATH:$PWD
+```
 3. Run CLI:
-
-    python3 src/interface/cli.py
+```bash
+python3 src/interface/cli.py
+```
 
 ## Usage
 
@@ -69,3 +72,5 @@ Available commands:
 MIT License
 
 ## Contributing
+
+See CONTRIBUTING.md for guidelines
