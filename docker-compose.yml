@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/app
+      - ai_psycho_drama_data:/data
+    environment:
+      - ENVIRONMENT=development
+    networks:
+      - ai_network
+
+volumes:
+  ai_psycho_drama_data:
+    external: true
+
+networks:
+  ai_network:
+    driver: bridge
